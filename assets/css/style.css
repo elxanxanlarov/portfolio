@@ -12,9 +12,11 @@
 .body {
      background-color: #FDFDFD !important;
 }
-a{
-text-decoration: none;
+
+a {
+     text-decoration: none;
 }
+
 /* NAv */
 .navbar {
      background-color: rgb(22, 22, 22);
@@ -38,28 +40,32 @@ text-decoration: none;
 }
 
 .navbar .navbar-nav li a {
-     color: #0D6EFD;
+     color: #fff;
      transition: .3s;
 }
 
 .navbar .navbar-nav li a:hover {
-     color: #fff;
+     color: #0D6EFD;
 }
 
 .navbar .navbar-nav li a.active {
-     color: #fff;
+     color: #0D6EFD;
 }
 
-.navbar .navbar-text  a{
-transition: .3s;
+.navbar .navbar-text a {
+     transition: .3s;
+     background-color: #fff !important;
+     font-weight: 600;
 }
-.navbar .navbar-text  a:hover{
-background-color:#fff !important;
+
+.navbar .navbar-text a:hover {
+     background-color: #0D6EFD !important;
 }
 
 .navbar .navbar-text i:hover {
      color: #fff;
 }
+
 /* Hero */
 .hero {
      background-color: #FDFDFD;
@@ -74,42 +80,49 @@ background-color:#fff !important;
 }
 
 @keyframes hero-left {
-  0%{
-     transform: translateX(-3rem);
-}   
-  100%{
-     transform: translateX(0);
-}   
+     0% {
+          transform: translateX(-3rem);
+     }
+
+     100% {
+          transform: translateX(0);
+     }
 }
-.hero .hero-left>div i:nth-child(1){
+
+.hero .hero-left>div i:nth-child(1) {
      margin-left: 0;
 }
-.hero .hero-left>div i{
+
+.hero .hero-left>div i {
      font-size: 1.5rem;
      padding: .5rem;
      margin: 0 .5rem;
      border: 2px solid;
-     cursor:pointer;
+     cursor: pointer;
      transition: .3s;
 }
-.hero .hero-left>div i:hover{
-color:#0D6EFD;
+
+.hero .hero-left>div i:hover {
+     color: #0D6EFD;
 }
+
 .hero .hero-right {
      width: 100%;
      height: 100%;
      padding: 2rem 0;
-     animation:hero-right 2s;
+     animation: hero-right 2s;
 }
 
 @keyframes hero-right {
-     0%{
-        transform: translateX(3rem);
-   }   
-     100%{
-        transform: translateX(0);
-   }   
-   }
+     0% {
+          transform: translateX(3rem);
+     }
+
+     100% {
+          transform: translateX(0);
+     }
+}
+
 .hero .hero-left * {
      color: black;
 }
@@ -128,148 +141,169 @@ color:#0D6EFD;
 
 
 /* About */
-.about{
-     background:black;
-     padding-bottom: 2rem ;
+.about {
+     background: black;
+     padding-bottom: 2rem;
 }
-.about *{
-color:#fff;
+
+.about * {
+     color: #fff;
 }
-.about .about-head span{
-     color:#0D6EFD;
+
+.about .about-head span {
+     color: #0D6EFD;
 }
-.about .about-body{
-background-color: black;
-color:#fff;
-font-family: "Miniver"
+
+.about .about-body {
+     background-color: black;
+     color: #fff;
+     font-family: "Miniver"
 }
 
 /* Skills */
 
-.skills .skills-body .box{
+.skills .skills-body .box {
      width: 100%;
      height: 15rem;
-     box-shadow: 2px 3px 47px -28px rgba(0,0,0,0.45);
+     box-shadow: 2px 3px 47px -28px rgba(0, 0, 0, 0.45);
      transition: 1s;
-     border-radius:1.5rem;
+     border-radius: 1.5rem;
      position: relative;
      overflow: hidden;
      display: flex;
      justify-content: center;
      align-items: center;
-     
+
 }
-.skills .skills-body .box>div{
-text-align: center;
+
+.skills .skills-body .box>div {
+     text-align: center;
 }
-.skills .skills-body .box:before{
-     content:"";
+
+.skills .skills-body .box:before {
+     content: "";
      position: absolute;
      width: 80px;
      height: 160%;
      background-color: #0D6EFD;
      z-index: -2;
-     animation:border 7s linear infinite;
+     animation: border 7s linear infinite;
 }
 
 @keyframes border {
-     0%{
-     transform: rotate(0deg);
+     0% {
+          transform: rotate(0deg);
      }
-     100%{
-     transform: rotate(360deg);
+
+     100% {
+          transform: rotate(360deg);
      }
 }
-.skills .skills-body .box::after{
-content:"";
-position: absolute;
-background:#fff;
-inset:4px;
-z-index: -1;
-border-radius:1.5rem
+
+.skills .skills-body .box::after {
+     content: "";
+     position: absolute;
+     background: #fff;
+     inset: 4px;
+     z-index: -1;
+     border-radius: 1.5rem
 }
-.skills .skills-body .box i{
+
+.skills .skills-body .box i {
      font-size: 8rem;
      transition: 1s;
 }
 
-.skills .skills-body .box>div>p{
-font-size: 1.5rem;
-font-weight: 600;
+.skills .skills-body .box>div>p {
+     font-size: 1.5rem;
+     font-weight: 600;
 }
 
 /* Projects */
 
-.projects .projects-body .box{
+.projects .projects-body .box {
      margin: 5rem 0;
-     border-radius:2rem;
-     padding:  7rem 4rem;
+     border-radius: 2rem;
+     padding: 7rem 4rem;
 }
+
 .projects .projects-body .box-one {
-     background-color:#0D6EFD;
-     box-shadow: -12px 20px 45px -17px rgba(0,0,0,0.75);
+     background-color: #0D6EFD;
+     box-shadow: -12px 20px 45px -17px rgba(0, 0, 0, 0.75);
 }
-.projects .projects-body  .box img{
+
+.projects .projects-body .box img {
      width: 100%;
      cursor: pointer;
-     border-radius:2rem;
+     border-radius: 2rem;
 }
+
 .projects .projects-body .box-one .box-right {
-color:#fff;
-border-radius:1rem;
+     color: #fff;
+     border-radius: 1rem;
 }
-.projects .projects-body .box-one .box-right a{
-     color:black;
+
+.projects .projects-body .box-one .box-right a {
+     color: black;
      transition: .4s;
 }
-.projects .projects-body .box-one .box-right a:hover{
-color:#fff;
+
+.projects .projects-body .box-one .box-right a:hover {
+     color: #fff;
 }
 
 
 .projects .projects-body .box-two {
-     background-color:#000;
-     box-shadow: 20px 21px 45px -17px rgba(0,0,0,0.75);
+     background-color: #000;
+     box-shadow: 20px 21px 45px -17px rgba(0, 0, 0, 0.75);
 }
 
 .projects .projects-body .box-two .box-right {
-color:#fff;
-border-radius:1rem;
+     color: #fff;
+     border-radius: 1rem;
 }
-.projects .projects-body .box-two .box-right a{
+
+.projects .projects-body .box-two .box-right a {
      color: #0D6EFD;
      transition: .4s;
 }
+
 .projects .projects-body .box-two .box-right a {
-text-align: right;
-width: 80%;
+     text-align: right;
+     width: 80%;
 }
-.projects .projects-body .box-two .box-right a:hover{
-color:#fff;
+
+.projects .projects-body .box-two .box-right a:hover {
+     color: #fff;
 }
 
 
 @media (max-width:576px) {
-     .navbar ,
+
+     .navbar,
      .hero {
           height: auto;
      }
+
      .hero .hero-left {
-     padding-bottom: 2rem;
-     }   
-     .hero .hero-right {   
-          padding: 0 ;
+          padding-bottom: 2rem;
      }
 
-     .projects .projects-body .box{
+     .hero .hero-right {
+          padding: 0;
+     }
+
+     .projects .projects-body .box {
           margin: 5rem 0;
-          border-radius:2rem;
-          padding:  2rem 2rem;
+          border-radius: 2rem;
+          padding: 2rem 2rem;
           text-align: center;
      }
 }
+
 @media (max-width:992px) {
-     .navbar ,
+
+     .navbar,
      .hero {
           height: auto;
      }
